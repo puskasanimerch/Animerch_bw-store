@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animerch_ BW</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f5;
+      color: #333;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('file:///mnt/data/file-TLGur7QrYZqAMNxihew8mT') no-repeat center center/cover;
+      opacity: 0.08;
+      z-index: -1;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 3rem 1rem;
+      color: white;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
+    .product p {
+      color: #777;
+      margin-bottom: 1rem;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      padding: 2rem;
+      background-color: #fff;
+    }
+    .gallery h2 {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 1.5rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.5s;
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    footer h2 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    footer p, footer a {
+      font-size: 1rem;
+      color: #ccc;
+      display: block;
+      margin: 0.3rem 0;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Animerch_ BW</h1>
+    <p>Level up your wardrobe with anime-inspired fashion!</p>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <img src="https://i.ibb.co/F4fPL9M/anime-hoodie.jpg" alt="Anime Hoodie">
+      <h3>Hoodies</h3>
+      <p>From P400.00</p>
+      <a class="whatsapp-btn" href="https://wa.me/26775442514?text=Hi!%20I%20want%20to%20order%20a%20hoodie">Order Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.ibb.co/YdttFzS/anime-tshirt.jpg" alt="Anime Tshirt">
+      <h3>Tshirts</h3>
+      <p>From P250.00</p>
+      <a class="whatsapp-btn" href="https://wa.me/26775442514?text=Hi!%20I%20want%20to%20order%20a%20tshirt">Order Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.ibb.co/mGFj4gR/anime-cap.jpg" alt="Anime Cap">
+      <h3>Caps</h3>
+      <p>P120.00</p>
+      <a class="whatsapp-btn" href="https://wa.me/26775442514?text=Hi!%20I%20want%20to%20order%20a%20cap">Order Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.ibb.co/Tr1Y6fH/sweater-pants.jpg" alt="Sweater Pants">
+      <h3>Sweater Pants</h3>
+      <p>P180.00</p>
+      <a class="whatsapp-btn" href="https://wa.me/26775442514?text=Hi!%20I%20want%20to%20order%20sweater%20pants">Order Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.ibb.co/3rSfqWr/anime-blanket.jpg" alt="Snuggle Blanket">
+      <h3>Snuggles</h3>
+      <p>P280.00</p>
+      <a class="whatsapp-btn" href="https://wa.me/26775442514?text=Hi!%20I%20want%20to%20order%20a%20snuggle">Order Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.ibb.co/dLgYDyL/anime-hat.jpg" alt="Anime Hat">
+      <h3>Hats</h3>
+      <p>P120.00</p>
+      <a class="whatsapp-btn" href="https://wa.me/26775442514?text=Hi!%20I%20want%20to%20order%20a%20hat">Order Now</a>
+    </div>
+  </div>
+
+  <section class="gallery">
+    <h2>Product Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://i.ibb.co/5K4vR3x/gallery-hoodie.jpg" alt="Gallery Hoodie">
+      <img src="https://i.ibb.co/Jt5H8NM/gallery-tshirt.jpg" alt="Gallery Tshirt">
+      <img src="https://i.ibb.co/ZhDb0cF/gallery-cap.jpg" alt="Gallery Cap">
+      <img src="https://i.ibb.co/MGyX3rN/gallery-pants.jpg" alt="Gallery Pants">
+      <img src="https://i.ibb.co/g9L4Dt1/gallery-blanket.jpg" alt="Gallery Blanket">
+      <img src="https://i.ibb.co/9gHgCZB/gallery-hat.jpg" alt="Gallery Hat">
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Phone: +267 75442524</p>
+    <p>Location: Gaborone, Botswana</p>
+    <p>Follow us:</p>
+    <a href="https://www.tiktok.com/@Animerch_bw" target="_blank">TikTok: @Animerch_bw</a>
+    <a href="https://www.instagram.com/Animerch_bw" target="_blank">Instagram: @Animerch_bw</a>
+    <a href="https://www.facebook.com/Animerch_bw" target="_blank">Facebook: @Animerch_bw</a>
+  </footer>
+</body>
+</html>
